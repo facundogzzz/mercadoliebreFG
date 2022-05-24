@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+body {
+    background-color: #ebebeb;
+    font-family: Roboto;
+}
+
+/* header {
+    position: fixed;
+    z-index: 10;
+} */
+
+h3{
+    font-size: 24px;
+    color: #666;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+header{
+    background-color: #EAC926;
+}
+header ul li{
+    list-style-type: none;
+    display: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+nav.list{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav.list a {
+    color: #222222;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px 5px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+    color: #666;
+}
+
+section.banner img{
+    width: 100%;
+    /* margin-top: 185px; */
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+}
+
+.footer-text{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-top: 50px;
+}
+
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main section article:hover .description {
+    display: block;
+}
+
+main section div.products article i {
+    transition: transform 1s;
+}
+
+main section div.products article:hover i {
+    transform: rotate(-90deg);
+}
+
+
+
+@media (min-width: 361px){
+
+    /* main{
+        margin-top: 0;
+    } */
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+
+    header ul li {
+        display: contents;
+
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    div.top-header {
+        flex-wrap: nowrap;
+    }
+
+    header div.top-header p {
+        text-align: right;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width: 769px){
+
+    header div.logo {
+        width: 80%
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    main section div.products article{
+        width: 22%;
+    }
+
+    div.top-header {
+    
+        align-items: center;
+    }
+
+    div.bottom-header {
+        max-width: none;
+        
+    }
+
+    footer section {
+        display: flex;
+    }
+
+    footer section div div.icon i {
+        transition: color 500ms;
+    }
+    
+    footer section div div.icon i:hover  {
+        color: #39b54a;
+    }
+    
+    /* -------------Login-------------- */
+}
+
+main.login form div.button {
+    transition: color 500ms;
+}
+
+main.login form div.button:hover  {
+color: #39b54a;
+}
+
+main.login form div{
+    text-align: center;
+    padding: 20px;
+}
