@@ -18,10 +18,12 @@
                 <img src="/images/logo-mercado-liebre.svg"  alt="logo de MercadoLiebre">
               </div>
               <div class="form" action="#" method="GET">
-                  <div class="input">Buscar productos, marcas y más</div>
-                  <div class="submit"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" placeholder="¿Qué necesitas?">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
+              <div class="header_p">
                 <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+              </div>  
           </div>
           <nav class="list">
               <ul>
@@ -36,68 +38,76 @@
                 <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
               </ul>
           </nav>
-      <div class="burger-menu">
-          <i class="fas fa-bars"></i>
-      </div>
-    </header>
-    <main class="register">
-        <form action="/" method="get">
-            <input type="text" name="nombre" placeholder="Nombre y Apellido">
-            <input type="text" name="usuario" placeholder="Nombre de Usuari@">
-            <input type="email" name="email" placeholder="E-mail">
-            <br>
-            <label for="birth_date"><b>Fecha de nacimiento</b></label>
-            <br>
+          <div class="burger-menu">
+            <i class="fa fa-bars burger"></i>
+          </div>
+      </header>
+    <main>
+          <form action="/" method="get">
+            <h4 class="titulo">Datos</h4>
+             <section class="user_head">        
+                <div class="input_text"><input type="text" name="nombre" placeholder="Nombre y Apellido"></div>
+                <div class="input_text"><input type="text" name="usuario" placeholder="Nombre de Usuari@"></div>
+                <div class="input_text"><input type="email" name="email" placeholder="E-mail"></div>
+             </section>    
+            <div class="titulo">
+            <label for="birth_date">Fecha de nacimiento</label>
+            </div>
+            <div class="titulo">
             <input type="date" name="birth_date" id="birth_date">
-            <br>
-            <input type="text" name="direccion" placeholder="Domicilio"><br>
-            <h4>Perfil del usuario</h4>
+            </div>
+            <div class="input_text">
+            <input type="text" name="direccion" placeholder="Domicilio">
+            </div>
+            <h4 class="titulo">Perfil del usuario</h4>
             <div class="profile">
-             <input type="radio" name="perfil" value="buy" id="buy">
-             <label for="buy">Comprador</label>
-             <input type="radio" name="perfil" value="sell" id="sell">
-             <label for="sell">Vendedor</label>
+              <div>
+                <input type="radio" name="perfil" value="buy" id="buy">
+                <label for="buy">Comprador</label>
+              </div>
+              <div>
+                <input type="radio" name="perfil" value="sell" id="sell">
+                <label for="sell">Vendedor</label>
+              </div>
             </div>
 
-            <h4>Intereses</h4>
+            <h4 class="titulo">Intereses</h4>
             <div class="interes">
               <div>
-                <label for="a">Electro</label>
                 <input type="checkbox" name="interes" value="a" id="a">
+                <label for="a">Electro</label>
               </div>
               <div>
-                <label for="b">Moda</label>
                 <input type="checkbox" name="interes" value="b" id="b">
+                <label for="b">Moda</label>
               </div>
               <div>
-                <label for="c">Hogar</label>
                 <input type="checkbox" name="interes" value="c" id="c">
+                <label for="c">Hogar</label>
               </div>
               <div>
-                <label for="d">Jugueteria</label>
                 <input type="checkbox" name="interes" value="d" id="d">
+                <label for="d">Jugueteria</label>
               </div>
               <div>
-                <label for="e">Vida sana</label>
                 <input type="checkbox" name="interes" value="e" id="e">
+                <label for="e">Vida sana</label>
               </div>
-              <div>
-                <label for="f">Foto de usuario</label>
+              </div>
+              <div class="titulo">
+                <p><label for="f">Foto de usuario</label></p>
                 <input type="file" name="avatar" id="foto">
               </div>
+            <h4 class="titulo">Elegi tu foto de usuario</h4>
+            <div class="titulo"><input type="file" name="avatar"></div>
+            <div>
+              <div class="input_text"><input type="password" name="password" placeholder="Elegí tu contraseña"></div>
+              <div class="input_text"><input type="password" name="password_confirm" placeholder="Repetí contraseña"></div>
             </div>
-            <h4>Elegi tu foto de usuario</h4>
-            <input type="file" name="avatar">
-            <br>
-            <br>
-            <input type="password" name="password" placeholder="Elegi tu contraseña">
-            <input type="password" name="password_confirm" placeholder="Confirma tu contraseña">
-            <br>
-            <br>
+            <div class="titulo">
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
-            <br>
-            <br>
+            </div>
         </form>
       </main>
       <footer>

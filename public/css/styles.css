@@ -240,6 +240,12 @@ main section div.products article:hover i {
         margin-top: 0;
     } */
 
+    .header_p,
+    header div.logo,
+    header .form{
+        width: 33.33%;
+    }
+
     main section div.products{
         display: flex;
         flex-direction: row;
@@ -284,7 +290,11 @@ main section div.products article:hover i {
 @media (min-width: 769px){
 
     header div.logo {
-        width: 80%
+        width: 33.33%
+    }
+
+    header .form {
+        font-size: 16px;
     }
 
     p {
@@ -329,6 +339,44 @@ color: #39b54a;
 }
 
 main.login form div{
-    text-align: center;
+    /* text-align: center; */
     padding: 20px;
 }
+
+     /* -------------Register-------------- */
+
+form {
+    width: 250px;
+}
+
+.input_text {
+    padding: 10px;
+    border-width: 1px;
+   
+}
+
+.user_head{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.interes {
+    padding: 10px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+main form p {
+    font-size: 16px;
+    padding: 10px 0px;
+}
+ 
