@@ -347,6 +347,7 @@ main.login form div{
 
 form {
     width: 250px;
+    margin: auto;
 }
 
 .input_text {
